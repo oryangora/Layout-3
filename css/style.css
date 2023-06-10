@@ -21,9 +21,6 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
 
 
 /******************************************
@@ -40,11 +37,25 @@ section {
        width: 20%;
        border: 2px solid black;
        float: left;
-       background: green;
+       background: green
 }
 .thiccone {
      width: 40%;
-     background-color: chartreuse;
+     background-color: chartreuse
+}
+@media  screen and (max-width:600px)  {
+     section { 
+          background: pink;
+     }    
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+     section{ 
+          background: blue;
+          width: 33.3333%;
+     }
+     .thiccone {
+          display: none;
+     }
 }
 /******************************************
 /* ADDITIONAL STYLES
